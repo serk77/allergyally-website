@@ -1,0 +1,11 @@
+# GitHub Pages Configuration
+title: AllergyAlly
+description: Track and manage your allergies with ease
+theme: jekyll-theme-cayman
+
+# Exclude files from Jekyll processing
+exclude:
+  - .git/
+  - .gitignore
+  - node_modules/
+  - .env
