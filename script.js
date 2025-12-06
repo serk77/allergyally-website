@@ -17,13 +17,26 @@ const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        
+
         // Get form data
         const formData = new FormData(this);
-        
-        // Show success message
-        alert('Thank you for your message! We\'ll get back to you soon.');
-        
+        const name = formData.get('name') || '';
+        const email = formData.get('email') || '';
+        const message = formData.get('message') || '';
+
+        // If form uses mailto action, open default mail client with prefilled content
+        const action = (this.getAttribute('action') || '').trim();
+        if (action.startsWith('mailto:')) {
+            const mailto = action;
+            const subject = encodeURIComponent('AllergyAlly: Waitlist / Contact');
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+            // open mailto
+            window.location.href = `${mailto}?subject=${subject}&body=${body}`;
+        }
+
+        // Show success message (also useful when not using mailto)
+        alert('Thank you! We received your request and will follow up shortly.');
+
         // Reset form
         this.reset();
     });

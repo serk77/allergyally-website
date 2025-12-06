@@ -5,14 +5,15 @@
 }
 
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #ec4899;
-    --light-bg: #f8fafc;
-    --dark-text: #1e293b;
-    --gray-text: #64748b;
-    --border-color: #e2e8f0;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.15);
+    /* Soft greens and muted blues palette */
+    --primary-color: #2f855a; /* muted green */
+    --secondary-color: #5aa3c8; /* muted blue */
+    --light-bg: #f6fbf7; /* very light green tint */
+    --dark-text: #0f172a; /* deep slate */
+    --gray-text: #556b6b;
+    --border-color: #e6f0ec;
+    --shadow: 0 4px 8px rgba(15, 23, 42, 0.06);
+    --shadow-lg: 0 18px 30px rgba(15, 23, 42, 0.12);
 }
 
 body {
@@ -76,7 +77,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
 }
 
@@ -250,9 +251,47 @@ body {
 /* Download Section */
 .download {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
     color: white;
     text-align: center;
+}
+
+/* Badge */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.12);
+    color: white;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.9rem;
+}
+
+/* Privacy diagram */
+.privacy-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+.diagram-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    color: var(--dark-text);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    min-width: 140px;
+}
+.diagram-arrow {
+    font-size: 1.4rem;
 }
 
 .download h2,
@@ -338,7 +377,7 @@ body {
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 0 4px rgba(47, 133, 90, 0.08);
 }
 
 /* Footer */

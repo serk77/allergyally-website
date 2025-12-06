@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AllergyAlly - Track and manage your allergies with ease">
-    <title>AllergyAlly - Allergy Tracking App</title>
+    <meta name="description" content="AllergyAlly - A privacy-first allergy companion using federated learning">
+    <title>AllergyAlly — Privacy-first Allergy Companion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,142 +12,269 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <span class="logo-icon">🏥</span>
+                <span class="logo-icon">�</span>
                 <span class="logo-text">AllergyAlly</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#download">Download</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#clinicians">Clinicians</a></li>
+                <li><a href="#collaborators">Collaborators</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Take Control of Your Allergies</h1>
-                <p>Track, monitor, and manage your allergies effortlessly with AllergyAlly</p>
+                <div class="badge">Privacy-first AI</div>
+                <h1>Allergy management, reimagined. Privacy-first. Personalized. Data-driven.</h1>
+                <p class="lead">A smart allergy companion app that learns from patterns, not your personal data — powered by federated learning.</p>
                 <div class="cta-buttons">
-                    <button class="btn btn-primary">Get Started</button>
-                    <button class="btn btn-secondary">Learn More</button>
+                    <a href="#contact" class="btn btn-primary btn-waitlist">Join Waitlist</a>
+                    <a href="#privacy" class="btn btn-secondary">Why Privacy Matters</a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="illustration">📱</div>
+                <div class="illustration">🌤️🌿</div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Problem Section -->
+    <section id="problem" class="features">
         <div class="container">
-            <h2>Key Features</h2>
+            <h2>The Problem</h2>
+            <p class="intro">Allergy management today is confusing, fragmented, and not personalized.</p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">📋</div>
-                    <h3>Track Allergies</h3>
-                    <p>Keep a detailed record of all your allergies and reactions in one place</p>
+                    <div class="feature-icon">🌍</div>
+                    <h3>Highly variable</h3>
+                    <p>Allergies vary by person, environment, and lifestyle — making triggers hard to identify.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">⚠️</div>
-                    <h3>Alert System</h3>
-                    <p>Receive notifications when you encounter potential allergens</p>
+                    <div class="feature-icon">✍️</div>
+                    <h3>Inconsistent logging</h3>
+                    <p>Tracking symptoms is subjective and often incomplete, reducing the value of insights.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Analytics</h3>
-                    <p>Visualize patterns and trends in your allergy data over time</p>
+                    <div class="feature-icon">🔍</div>
+                    <h3>Unclear triggers</h3>
+                    <p>It's difficult to know what actually caused a reaction: pollen, food, or cross-reactivity?</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🏥</div>
-                    <h3>Doctor Sharing</h3>
-                    <p>Share your allergy information securely with healthcare providers</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Privacy First</h3>
-                    <p>Your health data is encrypted and stays under your control</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Cross-Platform</h3>
-                    <p>Access your allergies from any device, anytime, anywhere</p>
+                    <div class="feature-icon">🏛️</div>
+                    <h3>Research gaps</h3>
+                    <p>Medical research lacks privacy-safe, diverse datasets that reflect real-world experiences.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works Section -->
+    <!-- Solution Section -->
+    <section id="solution" class="features">
+        <div class="container">
+            <h2>Your Solution</h2>
+            <p class="intro">Your daily allergy companion — with intelligent insights that stay on your device.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Real-time symptom tracking</h3>
+                    <p>Log symptoms quickly, with context (location, activity, food).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Automated trigger suggestions</h3>
+                    <p>On-device models suggest likely triggers based on patterns — without sharing raw data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌦️</div>
+                    <h3>Local weather & pollen alerts</h3>
+                    <p>Get proactive exposure warnings tailored to your area and sensitivities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔎</div>
+                    <h3>Ingredient scanner</h3>
+                    <p>Quickly check food labels for common allergens and cross-reactive ingredients.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Personalized insights</h3>
+                    <p>Understand long-term trends and what actions reduce your symptoms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💊</div>
+                    <h3>Medication & emergency plans</h3>
+                    <p>Track meds, reminders, and have your emergency plan ready when needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy & Technology Section -->
+    <section id="privacy" class="how-it-works">
+        <div class="container">
+            <h2>Privacy & Technology</h2>
+            <p class="intro">Federated learning keeps personal data on your phone — only encrypted model updates are shared. No raw location or symptom data ever leaves your device.</p>
+            <div class="privacy-diagram">
+                <div class="diagram-box">
+                    <div>📱</div>
+                    <div class="small-text">On-device data</div>
+                </div>
+                <div class="diagram-arrow">→</div>
+                <div class="diagram-box">
+                    <div>🔒</div>
+                    <div class="small-text">Encrypted update</div>
+                </div>
+                <div class="diagram-arrow">→</div>
+                <div class="diagram-box">
+                    <div>🧠</div>
+                    <div class="small-text">Aggregated model</div>
+                </div>
+                <div class="diagram-arrow">→</div>
+                <div class="diagram-box">
+                    <div>�</div>
+                    <div class="small-text">Improved insights</div>
+                </div>
+            </div>
+            <div class="container" style="margin-top:1.5rem;">
+                <p class="intro">Technical highlights: on-device ML, differential privacy steps, optional encrypted backups, GDPR-native architecture, and trustworthiness estimation for entries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinicians & Researchers -->
+    <section id="clinicians" class="features">
+        <div class="container">
+            <h2>For Clinicians & Researchers</h2>
+            <p class="intro">Cross-patient pattern detection without raw data. Understand environmental triggers and treatment adherence while preserving privacy.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔬</div>
+                    <h3>Federated studies</h3>
+                    <p>Run privacy-preserving studies across regions and institutions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">�</div>
+                    <h3>Safe pattern detection</h3>
+                    <p>Detect cross-patient trends without accessing individual records.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Research API</h3>
+                    <p>Contact us to discuss API access and study partnerships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborators -->
+    <section id="collaborators" class="features">
+        <div class="container">
+            <h2>For Collaborators</h2>
+            <p class="intro">We work with universities, allergy specialists, pharma, and public health agencies to build tools that help millions without compromising privacy.</p>
+            <div style="text-align:center;margin-top:1rem;"> 
+                <a href="#contact" class="btn btn-primary">Partner With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works (simple steps) -->
     <section id="how-it-works" class="how-it-works">
         <div class="container">
             <h2>How It Works</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Create Your Profile</h3>
-                    <p>Sign up and enter your personal allergy information</p>
+                    <h3>Install the app</h3>
+                    <p>Available on iOS & Android — install and create your profile.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Log Your Symptoms</h3>
-                    <p>Record allergic reactions and symptoms as they occur</p>
+                    <h3>Track symptoms & exposures</h3>
+                    <p>Quick logging with contextual signals (weather, location, food).</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Get Insights</h3>
-                    <p>Analyze patterns and understand your allergy triggers</p>
+                    <h3>Receive privacy-safe insights</h3>
+                    <p>On-device intelligence helps you avoid triggers without sharing raw data.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h3>Stay Safe</h3>
-                    <p>Make informed decisions with confidence</p>
+                    <h3>Contribute to better research</h3>
+                    <p>Opt-in anonymously to federated studies to improve population insights.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="download">
+    <!-- Team & Roadmap -->
+    <section id="team" class="features">
         <div class="container">
-            <h2>Get AllergyAlly Today</h2>
-            <p>Available on iOS and Android</p>
-            <div class="download-buttons">
-                <a href="#" class="download-link">
-                    <span class="platform-icon">🍎</span>
-                    <div>
-                        <div class="small-text">Download on the</div>
-                        <div class="platform-name">App Store</div>
-                    </div>
-                </a>
-                <a href="#" class="download-link">
-                    <span class="platform-icon">🤖</span>
-                    <div>
-                        <div class="small-text">Get it on</div>
-                        <div class="platform-name">Google Play</div>
-                    </div>
-                </a>
+            <h2>About the Team</h2>
+            <p class="intro">AI & medical researcher background; experience in clinical integration and productization. Motivated to bridge AI and real patient needs.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧑‍🔬</div>
+                    <h3>Research & ML</h3>
+                    <p>On-device ML and federated learning expertise.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Clinical integration</h3>
+                    <p>Experience working with medical standards and clinical partners.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Community</h3>
+                    <p>Volunteering and outreach in cybersecurity & health communities.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="roadmap" class="how-it-works">
+        <div class="container">
+            <h2>Roadmap</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">Now</div>
+                    <h3>Prototype & model design</h3>
+                </div>
+                <div class="step">
+                    <div class="step-number">Q1</div>
+                    <h3>Federated learning pilot</h3>
+                </div>
+                <div class="step">
+                    <div class="step-number">Q2</div>
+                    <h3>Closed beta</h3>
+                </div>
+                <div class="step">
+                    <div class="step-number">Q3–Q4</div>
+                    <h3>Partnerships & regulatory alignment</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Waitlist -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <form class="contact-form">
+            <h2>Join the Waitlist / Contact</h2>
+            <form class="contact-form" action="mailto:hello@allergyally.app" method="post" enctype="text/plain">
                 <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
+                    <input type="text" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <textarea name="message" placeholder="Tell us if you'd like beta access, partnership, or research info" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary">Join Waitlist</button>
             </form>
         </div>
     </section>
